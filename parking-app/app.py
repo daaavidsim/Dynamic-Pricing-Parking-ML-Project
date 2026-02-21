@@ -12,7 +12,7 @@ st.set_page_config(page_title="Smart Parking Pricing", layout="wide")
 @st.cache_data
 def load_and_preprocess():
     # Load dataset
-    df = pd.read_csv('IIoT_Smart_Parking_Management.csv')
+    df = pd.read_csv('parking-app/IIoT_Smart_Parking_Management.csv')
     df['Timestamp'] = pd.to_datetime(df['Timestamp'])
     
     # Feature Engineering from your notebook
